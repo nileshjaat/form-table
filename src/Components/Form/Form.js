@@ -19,13 +19,13 @@ const Form = ({ saveDataInfo, tableData }) => {
   };
 
   const handleSubmit = (e) => {
+    e.preventDefault();
+
     if (
       formValues.firstName !== '' &&
       formValues.lastName !== '' &&
       formValues.email !== ''
     ) {
-      e.preventDefault();
-
       if (tableData?.length > 0) {
         saveDataInfo([...tableData, formValues]);
       } else {
