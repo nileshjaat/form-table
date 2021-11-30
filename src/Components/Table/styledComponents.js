@@ -7,6 +7,7 @@ export const MainContainer = styled.div`
   flex-direction: column;
   align-items: center;
   margin-top: 64px;
+  margin-bottom: 32px;
 `;
 
 export const TableContent = styled.div`
